@@ -1,0 +1,7 @@
+{
+  "selected_model": "Stacking",
+  "selection_metric": "grouped cross-validation macro-F1",
+  "cv_splits": 3,
+  "feature_set_for_selection": "day-28 expanded",
+  "seed": 53
+}

@@ -1,0 +1,16 @@
+check,pass,value
+unique student partition,True,1
+binary probability rows sum to one,True,4103
+binary saved/recomputed accuracy,True,4103
+binary saved/recomputed macro_f1,True,4103
+binary saved/recomputed weighted_f1,True,4103
+binary saved/recomputed balanced_accuracy,True,4103
+binary saved/recomputed log_loss,True,4103
+binary confusion matrix reconciles,True,4103
+multiclass probability rows sum to one,True,4103
+multiclass saved/recomputed accuracy,True,4103
+multiclass saved/recomputed macro_f1,True,4103
+multiclass saved/recomputed weighted_f1,True,4103
+multiclass saved/recomputed balanced_accuracy,True,4103
+multiclass saved/recomputed log_loss,True,4103
+multiclass confusion matrix reconciles,True,4103

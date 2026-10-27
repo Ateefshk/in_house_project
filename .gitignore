@@ -1,0 +1,17 @@
+# Raw student-level data and derived row-level files
+data/original/
+data/derived/
+outputs/predictions/
+outputs/metrics/*split_assignments.csv
+outputs/metrics/excluded_records.csv
+outputs/metrics/binary_test_subgroup_metrics.csv
+# Local environments and generated Python files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+# Research paper and assets (user requested project only)
+outputs/ieee_research_paper/
+models/*baseline*
+outputs/RESEARCH_SUMMARY.md
+outputs/features_by_cutoff.csv

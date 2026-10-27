@@ -1,0 +1,5 @@
+cutoff_days,cutoff_end_day_inclusive,source_enrollments,eligible_enrollments,eligible_students,at_risk_prevalence,excluded_unregistered_by_cutoff,excluded_registered_after_cutoff,excluded_missing_registration_date,excluded_withdrawn_timing_unknown
+7,6,32593,29002,25968,0.4709330391007517,3361,93,45,92
+14,13,32593,27970,25152,0.45084018591347874,4427,59,45,92
+21,20,32593,27787,25033,0.44675567711519776,4642,26,45,93
+28,27,32593,27435,24758,0.43947512301804265,5002,18,45,93

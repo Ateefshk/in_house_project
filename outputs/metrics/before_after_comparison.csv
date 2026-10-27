@@ -1,0 +1,5 @@
+project,task,selected_model,test_rows,accuracy,macro_f1,balanced_accuracy,at_risk_precision,at_risk_recall,roc_auc,average_precision,log_loss,macro_ovr_roc_auc
+strengthened predecessor,binary,LogisticRegression,4122,0.675400,0.669341,0.668758,0.636728,0.612885,0.739657,0.714090,0.594188,
+improved project,binary,Stacking,4103,0.652449,0.645683,0.645225,0.607020,0.586763,0.707028,0.684159,0.616180,
+strengthened predecessor,multiclass,DecisionTree,4122,0.499272,0.308073,0.326579,,,,1.265913,0.668177
+improved project,multiclass,Stacking,4103,0.502072,0.316609,0.335765,,,,1.162861,0.671769

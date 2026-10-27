@@ -1,0 +1,3 @@
+task,metric,primary_random_test,temporal_2014J_test,interpretation
+binary,recall_1,0.5867630700778643,0.6442386270770907,same-university temporal validation; not external validation
+multiclass,macro_f1,0.3166087510113137,0.3224000170729674,same-university temporal validation; not external validation
