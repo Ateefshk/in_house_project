@@ -1,16 +1,16 @@
 # Interactive console predictor
 
-Run the model directly in a terminal; this mode does not start a web server or open a browser. From the project root:
+From the project root, install the console dependencies and start the predictor:
 
 ```powershell
 python -m pip install -r requirements-console.txt
-python console_app.py
+python main.py
 ```
 
-The predictor loads the included trained models and course/presentation lookup. It asks for a hypothetical learner profile using activity from the first 28 course days, then prints the four-category probabilities and the binary risk probability. Press Enter to use the displayed defaults; enter `y` to score another profile. Press Ctrl+C to exit. Profiles entered at the prompt are not saved.
+`python main.py predict` does the same thing. The program loads the included models and course/presentation lookup, then asks for a hypothetical learner profile using activity from the first 28 course days. Press Enter to accept the displayed defaults, enter `y` for another prediction, or press Ctrl+C to exit. It does not open a browser or save entered profiles.
 
-The models were trained on OULAD data from one UK university. Treat results as a research demonstration for hypothetical profiles, not decisions about real students.
+To run the separate full model-training pipeline, first download the OULAD CSV files into `data/original/`, install full dependencies with `python -m pip install -r requirements.txt`, and run `python main.py train`.
 
-## Optional browser dashboard
+The models use OULAD data from one UK university. Treat predictions as a research demonstration for hypothetical profiles.
 
-`app.py` remains available if a browser dashboard is wanted. Install the full dependencies from `requirements.txt` and run `python -m streamlit run app.py`. The console predictor does not need Streamlit.
+`app.py` remains an optional Streamlit dashboard; console mode does not need Streamlit.
