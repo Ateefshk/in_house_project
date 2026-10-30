@@ -11,7 +11,7 @@ python -m pip install -r requirements-console.txt
 python main.py
 ```
 
-You can also run `python main.py predict`. The console asks for a hypothetical learner profile and prints the performance category and probabilities. Press Enter to use each default; enter `y` to score another profile. See [INTERACTIVE_APP.md](INTERACTIVE_APP.md) for details.
+You can also run the predictor explicitly with `python main.py predict`. It asks for a hypothetical learner profile and prints the performance category and probabilities. Press Enter to use each default; enter `y` to score another profile.
 
 ## Run the full training pipeline
 
@@ -23,8 +23,6 @@ python main.py train
 ```
 
 The pipeline writes metrics, predictions, and figures under `outputs/`; fitted pipelines are saved in `models/`. Student-level predictions and split assignments are generated locally and must not be published. See [data/README.md](data/README.md) for attribution and placement details.
-
-`app.py` remains an optional Streamlit dashboard; it is not needed for the console predictor.
 
 ## Method
 
