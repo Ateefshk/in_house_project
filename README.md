@@ -1,17 +1,19 @@
 # Improved OULAD academic performance project
 
-A reproducible student-grouped study for early prediction of OULAD final outcomes. This repository contains analysis code, fitted day-28 models, aggregate evaluation outputs, and an interactive dashboard. Raw student-level source data, row-level predictions, and the accompanying research paper are excluded. The analysis reconstructs actual day 0–6, 0–13, 0–20, and 0–27 VLE activity from `studentVle.csv`; it never creates artificial dates. Both targets are supported: binary risk (Fail/Withdrawn versus Pass/Distinction) and the original four-category result.
+A reproducible student-grouped study for early prediction of OULAD final outcomes. This repository contains analysis code, fitted day-28 models, aggregate evaluation outputs, and an interactive terminal predictor, with an optional browser dashboard. Raw student-level source data, row-level predictions, and the accompanying research paper are excluded. The analysis reconstructs actual day 0–6, 0–13, 0–20, and 0–27 VLE activity from `studentVle.csv`; it never creates artificial dates. Both targets are supported: binary risk (Fail/Withdrawn versus Pass/Distinction) and the original four-category result.
 
-## Run the interactive dashboard
+## Run the interactive console predictor
 
-Use Python 3.13.2, install the dependencies, then launch Streamlit from this folder:
+Use Python 3.13.2, install the console dependencies, and run the predictor from this folder:
 
 ```powershell
-python -m pip install -r requirements.txt
-python -m streamlit run app.py
+python -m pip install -r requirements-console.txt
+python console_app.py
 ```
 
-The dashboard works with the included fitted models and aggregate results. See [INTERACTIVE_APP.md](INTERACTIVE_APP.md) for details.
+It loads the included day-28 models, prompts for a hypothetical learner profile, and prints performance-category and at-risk probabilities in the terminal. It does not start a web server, open a browser, or save entered profiles. See [INTERACTIVE_APP.md](INTERACTIVE_APP.md) for details.
+
+An optional Streamlit dashboard remains in `app.py`; it is not needed for console use.
 
 ## Reproduce model training
 
@@ -34,4 +36,4 @@ See [data/README.md](data/README.md) for attribution and placement details. The 
 
 ## Project contents
 
-`src/` and `main.py` contain the training pipeline; `app.py` is the interactive dashboard; `models/` contains fitted day-28 pipelines; `outputs/metrics/` and `outputs/figures/` contain aggregate evaluation artifacts. Raw data and the IEEE research paper are not part of this project repository.
+`src/` and `main.py` contain the training pipeline; `console_app.py` is the interactive terminal predictor; `app.py` is an optional dashboard; `models/` contains fitted day-28 pipelines; `outputs/metrics/` and `outputs/figures/` contain aggregate evaluation artifacts. Raw data and the IEEE research paper are not part of this project repository.
